@@ -10,5 +10,43 @@
     <h1>
         Contact Me
     </h1>
+
+        <form>
+            <fieldset>
+                <legend>User Information</legend>
+
+                <label for="firstname">First Name:</label>
+                <input id="firstname" type="text">
+
+                <br>
+
+                <label for="lastname">Last Name:</label>
+                <input id="lastname" type="text">
+
+                <br>
+
+                <label for="email">Email Address:</label>
+                <input id="email" type="email">
+            </fieldset>
+                <br>
+            <select name="Reason For Contact">
+                <option value="Select One" selected>Select One</option>
+                <option value="Enquiring About Upcoming Projects">Enquiring About Upcoming Projects</option>
+                <option value="Advice On Current Projects">Advice On Current Projects</option>
+                <option value="Status On MSCodes Course">Status on MSCodes Course</option>
+                <option value="To Introduce Myself">To Introduce Myself</option>
+                <option value="Anything Else">Anything Else</option>
+                <br>
+            </select>
+                <fieldset>
+                    <br>
+                    <legend>Comments</legend>
+
+                <label for="comments"></label>
+                <textarea id="comments" cols="30" rows="10" placeholder="Enter Your Comments Here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Send</button>
+        </form>
 </body>
 </html>
