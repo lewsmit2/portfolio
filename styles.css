@@ -4,6 +4,7 @@
 body {
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+    margin: 0;
 }
 
 * {
@@ -18,10 +19,10 @@ body {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 100px auto auto 80px;
+    grid-template-rows: 100px auto auto 40px;
     grid-gap: 10px;
     grid-template-areas: 
-        "name links links"
+        "links links links"
         "about about about"
         "qualities qualities qualities"
         "footer footer footer";
@@ -29,18 +30,28 @@ body {
     min-height: 100vh;
 }
 
-.nav-my-name {
+/* .nav-my-name {
     grid-area: name;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
+
+
 
 .nav {
     grid-area: links;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.nav-name-flex {
+    margin: 20px;
+}
+
+.me {
+    border-radius: 40%;
 }
 
 .my-class {
@@ -90,18 +101,38 @@ body {
     align-content: center;
 }
 
+@media screen and (min-width: 768px) {
+    .image-1, .image-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .chess-pic, .strategic-span, .comfort-pic, .comfort-span {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
 .strategic-span, .comfort-span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+
+
 .chess-pic {
     border-radius: 50%;
+    margin: 5px;
 }
 
 .comfort-pic {
     border-radius: 50%;
+    margin: 5px;
 }
 
 .qualities-interests {
@@ -128,6 +159,19 @@ body {
 .first-list, .second-list {
     list-style: none;
     padding: 0;
+}
+
+.the-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
 }
 
 /* .qualities {
