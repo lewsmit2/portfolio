@@ -48,3 +48,58 @@ body {
 .the-footer {
     grid-area: footer;
 }
+
+.my-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.strategic-span, .comfort-span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chess-pic {
+    border-radius: 50%;
+}
+
+.comfort-pic {
+    border-radius: 50%;
+}
+
+.qualities-interests {
+    justify-content: center;
+}
+
+.grid-extra {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: minmax(200px, auto);
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.qualities, .hobbies-interests {
+    
+    align-self: start;
+    justify-self: center;
+}
+
+.first-list, .second-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* .qualities {
+    grid-area: qualities;
+}
+
+.hobbies-interests {
+    grid-area: hobbies;
+} */
