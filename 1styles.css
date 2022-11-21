@@ -36,33 +36,47 @@ body {
     grid-row: 1 / 2;
 }
 
-.nav-bar-links {
-   
+.nav-bar-links {   
     grid-column: 4 / 5;
     grid-row: 1 / 2;
- 
 }
 
+.about-me-container {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;    
+}
 
-/* .nav {
-    grid-area: links;
+.photo-container {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.photo-1st-container, .photo-2nd-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.nav-name-flex {
-    margin: 20px;
+.photo-1st-quote, .photo-2nd-quote {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 
-.me {
-    border-radius: 40%;
+@media screen and (max-width: 768px) {
+    .photo-1st-container, .photo-2nd-container {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
 }
 
-.my-class {
-    grid-area: about;
+.photo-1st-chess, .photo-2nd-motiv {
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
 }
-
-.qualities-interests {
-    grid-area: qualities;
-} */
