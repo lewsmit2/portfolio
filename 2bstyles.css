@@ -235,7 +235,9 @@ body {
 }
 
 .qualities-frontend-container, .qualities-backend-container, .qualities-learning-container {
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .qualities-backend-title, .qualities-frontend-title, .qualities-learning-title {
@@ -257,7 +259,7 @@ body {
 
 
 .qualities-container2 > div > div:nth-of-type(2) {
-    padding: 5px;
+    padding: 2% 5% 2% 5%;
     text-align: center;
 }
 
@@ -265,6 +267,16 @@ body {
     background-color: #452b87; 
     margin: 0.5vh;
     border-radius: 30px;
+}
+
+.qualities-h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.qualities-h3-learn {
+    padding: 0 0 5% 0;
+    margin: 0 ;
 }
 
 @media screen and (min-width: 768px) {
